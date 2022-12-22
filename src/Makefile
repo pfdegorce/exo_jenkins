@@ -21,6 +21,8 @@ test: test/main.c test/math_function.o test/math_function.h
 	gcc -o test/main_test test/main_test.o test/math_function.o
 	./test/main_test
 	
-
 clean:
 	rm -f *.o
+
+clean_test:
+	rm -f test/*.o
